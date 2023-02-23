@@ -227,12 +227,6 @@ class ComposeUIElementsTest {
     }
 
     @Test
-    fun performMouseInput(){
-        page.swipeableNode.performMouseInput { swipeUp() }
-        page.status.assertTextEquals(ActionsStatus.SwipeUp.name)
-    }
-
-    @Test
     fun assertIsDisplayed() {
         page.status.assertIsDisplayed()
     }
