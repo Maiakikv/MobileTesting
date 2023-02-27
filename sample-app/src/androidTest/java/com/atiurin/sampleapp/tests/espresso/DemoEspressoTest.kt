@@ -58,6 +58,7 @@ class DemoEspressoTest : BaseTest() {
         FriendsListPage.assertPageDisplayed()
     }
 
+
     @Test
     fun openContextualActionModeOverflowMenuTest(){
         FriendsListPage.openChat("Chandler Bing")
