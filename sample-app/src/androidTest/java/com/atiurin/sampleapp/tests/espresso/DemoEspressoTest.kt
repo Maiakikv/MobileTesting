@@ -8,6 +8,8 @@ import com.atiurin.sampleapp.pages.FriendsListPage
 import com.atiurin.sampleapp.tests.BaseTest
 import com.atiurin.ultron.core.espresso.UltronEspresso
 import com.atiurin.ultron.extensions.doesNotExist
+import com.atiurin.ultron.extensions.isChecked
+import com.atiurin.ultron.extensions.isClickable
 import com.atiurin.ultron.extensions.isDisplayed
 import org.junit.Test
 
@@ -74,5 +76,7 @@ class DemoEspressoTest : BaseTest() {
         ChatPage.clearHistoryBtn.doesNotExist()
         UltronEspresso.openActionBarOverflowOrOptionsMenu()
         ChatPage.clearHistoryBtn.isDisplayed()
+        ChatPage.clearHistoryBtn.isClickable()
+        ChatPage.clearHistoryBtn.isChecked()
     }
 }
