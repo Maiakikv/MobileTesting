@@ -56,6 +56,7 @@ class DemoEspressoTest : BaseTest() {
         ChatPage.assertPageDisplayed()
         UltronEspresso.pressBack()
         FriendsListPage.assertPageDisplayed()
+
     }
 
 
