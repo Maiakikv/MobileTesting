@@ -1,4 +1,4 @@
-package com.atiurin.sampleapp.framework.utils
+package com.atiurin.sampleapp.helper
 
 import androidx.test.espresso.EspressoException
 

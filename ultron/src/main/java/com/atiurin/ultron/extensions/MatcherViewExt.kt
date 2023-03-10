@@ -22,6 +22,7 @@ fun Matcher<View>.withAssertion(name: String = "", isListened: Boolean = false, 
     UltronEspressoInteraction(onView(this)).withAssertion(DefaultOperationAssertion(name, block.setListenersState(isListened)))
 
 //actions
+fun Matcher<View>.tap() = UltronEspressoInteraction(onView(this)).click()
 fun Matcher<View>.click() = UltronEspressoInteraction(onView(this)).click()
 fun Matcher<View>.doubleClick() = UltronEspressoInteraction(onView(this)).doubleClick()
 fun Matcher<View>.longClick() = UltronEspressoInteraction(onView(this)).longClick()

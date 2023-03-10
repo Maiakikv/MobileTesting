@@ -1,4 +1,4 @@
-package com.atiurin.sampleapp.framework.utils
+package com.atiurin.sampleapp.helper
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

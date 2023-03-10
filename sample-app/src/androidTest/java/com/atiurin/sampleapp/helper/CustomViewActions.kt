@@ -1,4 +1,4 @@
-package com.atiurin.sampleapp.framework.utils
+package com.atiurin.sampleapp.helper
 
 import android.app.Instrumentation
 import android.graphics.drawable.ColorDrawable
@@ -371,7 +371,7 @@ fun Matcher<View>.scrollLeft(timeOutIfNotExitInSec: Int = 3) {
  */
 fun Matcher<View>.tap(timeOutIfNotExitInSec: Int = 3, byPosition: Int = 0) {
     waitForViewVisible(timeOutIfNotExitInSec)
-    onView(withIndex(this, byPosition)).perform(ViewActions.click())
+    onView(withIndex(this, byPosition)).perform(click())
 }
 
 
@@ -379,7 +379,7 @@ fun Matcher<View>.tap(timeOutIfNotExitInSec: Int = 3, byPosition: Int = 0) {
  * Click on view
  */
 fun ViewInteraction.tap() {
-    waitUntilVisible(3).perform(ViewActions.click())
+    waitUntilVisible(3).perform(click())
 }
 
 /**

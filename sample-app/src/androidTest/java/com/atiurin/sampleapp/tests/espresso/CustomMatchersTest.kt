@@ -26,6 +26,7 @@ class CustomMatchersTest : BaseTest() {
     fun actionOnFirstMatchedView(){
         withId(R.id.tv_name).first().click()
         ChatPage.assertToolbarTitle(ContactRepositoty.getFirst().name)
+        withId(R.id.tv_name)
     }
 
     @Test
