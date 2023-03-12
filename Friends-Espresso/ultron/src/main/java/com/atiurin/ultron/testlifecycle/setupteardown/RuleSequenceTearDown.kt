@@ -1,3 +1,0 @@
-package com.atiurin.ultron.testlifecycle.setupteardown
-
-interface RuleSequenceTearDown
