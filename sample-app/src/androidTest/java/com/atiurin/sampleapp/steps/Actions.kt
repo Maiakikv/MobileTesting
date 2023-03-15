@@ -26,7 +26,7 @@ object Actions {
     }
 
     fun swipe(){
-        swiper(300, 100, 5)
+        swiper(350, 200, 5)
     }
 
     fun scrollToFriend(friendName: String){

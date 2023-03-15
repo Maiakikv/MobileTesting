@@ -51,16 +51,5 @@ class ChattingTestsMaia {
         }
     }
 
-//    @Test
-//    fun chatWithEmmetut() {
-//        with(FriendsPageMatchersMaia) {
-//      //      Actions.scrollToFriend("Chandler Bing")
-//            Actions.openChatStep("Chandler Bing")
-//            ChatPageMatchersMaia.inputMessageText.isViewDisplayed()
-//            Actions.enterAndSendTextStep(MyData.drinkText)
-//
-//            val textView: ViewInteraction = onView(allOf(withId(R.id.message_text), withText(MyData.drinkText)))
-//            textView.check(matches(isDisplayed()))
-//        }
-//    }
+
 }
