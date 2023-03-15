@@ -29,14 +29,38 @@ class ChattingTestsMaia {
     val activityTestRule = ActivityScenarioRule(MainActivity::class.java)
 
     @Test
-    fun openChatTest() {
+    fun chatWithEmmetBrownTest() {
         with(FriendsPageMatchersMaia) {
-            Rachel.isViewDisplayed()
-            Actions.openChatStep("Rachel")
+            Actions.scrollToFriend("Emmet Brown")
+            Actions.openChatStep("Emmet Brown")
             ChatPageMatchersMaia.inputMessageText.isViewDisplayed()
-            Actions.enterAndSendTextStep(MyData.myText)
-            val textView: ViewInteraction = onView(allOf(withId(R.id.message_text), withText(MyData.myText)))
-            textView.check(matches(isDisplayed()))
+            Actions.enterAndSendTextStep(MyData.drinkText)
+
+            Actions.assertion(MyData.drinkText)
         }
     }
+    @Test
+    fun chatWithNamelessFriendTest() {
+        with(FriendsPageMatchersMaia) {
+            Actions.scrollToFriend("Friend17")
+            Actions.openChatStep("Friend17")
+            ChatPageMatchersMaia.inputMessageText.isViewDisplayed()
+            Actions.enterAndSendTextStep(MyData.changeNameText)
+
+            Actions.assertion(MyData.changeNameText)
+        }
+    }
+
+//    @Test
+//    fun chatWithEmmetut() {
+//        with(FriendsPageMatchersMaia) {
+//      //      Actions.scrollToFriend("Chandler Bing")
+//            Actions.openChatStep("Chandler Bing")
+//            ChatPageMatchersMaia.inputMessageText.isViewDisplayed()
+//            Actions.enterAndSendTextStep(MyData.drinkText)
+//
+//            val textView: ViewInteraction = onView(allOf(withId(R.id.message_text), withText(MyData.drinkText)))
+//            textView.check(matches(isDisplayed()))
+//        }
+//    }
 }
